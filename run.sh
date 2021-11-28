@@ -4,7 +4,7 @@ a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
 cd $a &&
-sleep 5S
+sleep 5s &&
 cp wallet* /home/nknx/nkn-commercial/services/nkn-node/ &&
 sleep 5s &&
 cd /var/lib/nyzo/production &&
