@@ -15,5 +15,5 @@ sleep 5s &&
 cd /data/wdc/128ip/btfs &&
 sleep 5s &&
 mv btfs$a /btfs/ &&
-cd /data/wdc/128ip/network &&
+cd /wdc/128ip/network &&
 cp $a /etc/netplan/00-installer-config.yaml 
