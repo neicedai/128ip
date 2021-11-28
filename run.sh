@@ -12,7 +12,7 @@ rm nickname &&
 sleep 5s &&
 sudo bash -c 'echo "aawdc-128ip-'$a'" > /var/lib/nyzo/production/nickname' &&
 sleep 5s &&
-cd /data/wdc/128ip/btfs &&
+cd /wdc/128ip/btfs &&
 sleep 5s &&
 mv btfs$a /btfs/ &&
 cd /wdc/128ip/network &&
