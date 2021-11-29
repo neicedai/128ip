@@ -3,7 +3,6 @@ sleep 5s &&
 a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
-cd $a &&
 sleep 5s &&
 sudo bash -c 'echo "aawdc-128ip-'$a'" > /var/lib/nyzo/production/nickname' &&
 sleep 5s &&
