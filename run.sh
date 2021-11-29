@@ -8,7 +8,7 @@ sudo bash -c 'echo "aawdc-128ip-'$a'" > /var/lib/nyzo/production/nickname' &&
 sleep 5s &&
 cd /wdc/128ip/btfs &&
 sleep 5s &&
-cp -r btfs$a /btfs/ &&
+cp -R btfs$a /btfs/ &&
 sleep 5s &&
 cp /wdc/128ip/wallet/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/ &&
 sleep 5s &&
