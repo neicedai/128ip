@@ -8,7 +8,6 @@ sleep 5s &&
 cp wallet* /home/nknx/nkn-commercial/services/nkn-node/ &&
 sleep 5s &&
 cd /var/lib/nyzo/production &&
-rm nickname &&
 sleep 5s &&
 sudo bash -c 'echo "aawdc-128ip-'$a'" > /var/lib/nyzo/production/nickname' &&
 sleep 5s &&
