@@ -16,5 +16,7 @@ cd /wdc/128ip/network &&
 sleep 5s &&
 cp $a /etc/netplan/00-installer-config.yaml &&
 mv /etc/rc.loacl /root/128ip &&
-sleep 5s
+sleep 5s &&
+cp /root/128ip/restart /root/ &&
+sleep 5s &&
 reboot
