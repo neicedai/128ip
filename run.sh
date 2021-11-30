@@ -15,8 +15,10 @@ sleep 5s &&
 cd /wdc/128ip/network &&
 sleep 5s &&
 cp $a /etc/netplan/00-installer-config.yaml &&
-mv /etc/rc.loacl /root/128ip &&
+mv /etc/rc.local /root/128ip &&
 sleep 5s &&
 cp /root/128ip/restart /root/ &&
+sleep 5s &&
+rm /var/lib/nyzo/production/verifier_private_seed &&
 sleep 5s &&
 reboot
