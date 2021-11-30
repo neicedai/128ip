@@ -1,3 +1,5 @@
+service btfs1 stop &&
+sleep 5s &&
 cd /wdc/128ip &&
 sleep 5s &&
 a=`cat num` &&
