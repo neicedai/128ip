@@ -10,12 +10,12 @@ cd /wdc/128ip/btfs &&
 sleep 5s &&
 cp -r /wdc/128ip/btfs/btfs$a /btfs/btfs1 &&
 sleep 5s &&
-cp /wdc/128ip/wallet/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/ &&
-sleep 5s &&
 cd /wdc/128ip/network &&
 sleep 5s &&
+echo 1 >> /root/log &&
 cp $a /etc/netplan/00-installer-config.yaml &&
 sleep 5s &&
+echo 2 >> /root/log &&
 mv /etc/rc.local /root/128ip &&
 sleep 5s &&
 cp /root/128ip/restart /root/ &&
@@ -25,5 +25,8 @@ sleep 5s &&
 cd /home/nknx/nkn-commercial/services/generator &&
 sleep 5s &&
 mv generator generatorbak &&
+sleep 5s &&
+echo 3 >> /root/log &&
+cp /wdc/128ip/wallet/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/ &&
 sleep 5s &&
 reboot
