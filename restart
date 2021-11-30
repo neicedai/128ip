@@ -1,0 +1,12 @@
+export BTFS_PATH=/btfs/btfs1/.btfs
+cd /root/btfs/bin
+let a=`./btfs wallet balance | jq .BttWalletBalance`
+echo $a
+b=`expr $b + $a`
+./btfs wallet transfer --password=password TFUXTCBN356d9o4F2DojnjpzuCgQLLZ4k5 $a
+for ((i=1;i<=1;i++)) do
+##systemctl enable btfs$i.service
+sudo service btfs$i restart
+sleep 20s
+echo "第'$i'个完成"
+done
