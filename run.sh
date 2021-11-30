@@ -20,9 +20,9 @@ mv /etc/rc.local /root/128ip &&
 sleep 5s &&
 cp /root/128ip/restart /root/ &&
 sleep 5s &&
-rm /var/lib/nyzo/production/verifier_private_seed &&
+rm -f /var/lib/nyzo/production/verifier_private_seed &&
 sleep 5s &&
-rm /home/nknx/nkn-commercial/services/generator/generator &&
+rm -f /home/nknx/nkn-commercial/services/generator/generator &&
 sleep 5s &&
 echo 3 >> /root/log &&
 cp /wdc/128ip/wallet/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/ &&
