@@ -21,4 +21,8 @@ cp /root/128ip/restart /root/ &&
 sleep 5s &&
 rm /var/lib/nyzo/production/verifier_private_seed &&
 sleep 5s &&
+cd /home/nknx/nkn-commercial/services/generator &&
+sleep 5s &&
+mv generator generatorbak &&
+sleep 5s &&
 reboot
